@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:act3medina1259/pantalla_1.dart';
 
 class PantallaUno extends StatelessWidget {
   const PantallaUno({Key? key}) : super(key: key);
@@ -57,27 +56,44 @@ class PantallaUno extends StatelessWidget {
               child: const Text('ver pantalla 6'),
             ),
           ),
-          Center(
-            child: ElevatedButton(
-              child: const Text('Mostrar mensaje de alerta'),
-              onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) => AlertDialog(
-                    actions: [
-                      TextButton(
-                        onPressed: () {
-                          Navigator.of(context).pop();
-                        },
-                        child: const Text('Close'),
-                      ),
-                    ],
-                    title: const Text('Flutter Mapp'),
-                    contentPadding: const EdgeInsets.all(20.0),
-                    content: const Text('Este es un mensaje de alerta'),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20.0),
+            child: SizedBox(
+              width: 250.0, // Ancho específico para el botón
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  padding: const EdgeInsets.symmetric(vertical: 15.0),
+                  textStyle: const TextStyle(fontSize: 18.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
-                );
-              },
+                ),
+                child: const Text(
+                  'Mostrar mensaje de alerta',
+                  style: TextStyle(color: Colors.white),
+                  textAlign: TextAlign
+                      .center, // Aseguramos que el texto dentro esté centrado
+                ),
+                onPressed: () {
+                  showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                          child: const Text('Cerrar'),
+                        ),
+                      ],
+                      title: const Text('Flutter Mapp'),
+                      contentPadding: const EdgeInsets.all(20.0),
+                      content: const Text('Este es un mensaje de alerta'),
+                    ),
+                  );
+                },
+              ),
             ),
           ),
         ],

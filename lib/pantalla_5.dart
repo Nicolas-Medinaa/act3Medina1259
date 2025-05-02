@@ -14,7 +14,12 @@ class _PantallaCincoState extends State<PantallaCinco> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pantalla Cinco'), // Puedes personalizar el título
+        title: const Text(
+          'Pantalla cinco',
+          style: TextStyle(color: Colors.white, fontSize: 25.0),
+        ),
+        backgroundColor: Color(0xffff3939),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(

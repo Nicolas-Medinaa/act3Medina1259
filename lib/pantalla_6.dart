@@ -20,7 +20,12 @@ class _PantallaSeisState extends State<PantallaSeis> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Pantalla Seis'),
+        title: const Text(
+          'Pantalla seis',
+          style: TextStyle(color: Colors.white, fontSize: 25.0),
+        ),
+        backgroundColor: Color(0xffff9200),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:act3medina1259/pantalla_3.dart';
 
 class PantallaTres extends StatefulWidget {
   const PantallaTres({Key? key}) : super(key: key);

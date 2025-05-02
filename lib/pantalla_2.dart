@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:act3medina1259/pantalla_2.dart';
 
 class PantallaDos extends StatefulWidget {
   const PantallaDos({Key? key}) : super(key: key);
